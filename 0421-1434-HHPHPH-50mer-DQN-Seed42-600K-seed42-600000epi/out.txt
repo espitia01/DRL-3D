@@ -1,0 +1,180 @@
+os.uname() =  posix.uname_result(sysname='Darwin', nodename='Giovannys-MacBook-Pro.local', release='23.3.0', version='Darwin Kernel Version 23.3.0: Wed Dec 20 21:31:00 PST 2023; root:xnu-10002.81.5~7/RELEASE_ARM64_T6020', machine='arm64')
+args parse seq =  HHPHPHPHPHHHHPHPPPHPPPHPPPPHPPPHPPPHPHHHHPHPHPHPHH
+args parse seed =  42
+args parse algo =  50mer-DQN-Seed42-600K
+args parse save_path =  ./0421-1434-HHPHPH-50mer-DQN-Seed42-600K-seed42-600000epi/
+args parse num_episodes =  600000
+args parse use_early_stop =  0
+optima_idx =  {21: 0, 23: 0}
+optima_actions_set =  {21: [], 23: []}
+##### Summary of Hyperparameters #####
+learning_rate:  0.0005
+BATCH_SIZE:  32
+GAMMA:  0.98
+mem_start_train:  2500
+TARGET_UPDATE:  100
+buffer_limit:  50000
+train_times:  10
+##### End of Summary of Hyperparameters #####
+decay_mode=exponential warmRestart=True
+num_restarts=1 exploration_decay_rate=5 start_decay=0
+warmRestart =  True
+N =  50
+N_half=25
+F_half_pattern=F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F
+F_half_minus_one_pattern=F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F
+condensed_F_pattern =  FFFFFFFFFFFFFFFFFFFFFFFF
+Order-1-Residue-H
+H Odd
+Order-2-Residue-H
+H Even
+Order-3-Residue-P
+Order-4-Residue-H
+H Even
+Order-5-Residue-P
+Order-6-Residue-H
+H Even
+Order-7-Residue-P
+Order-8-Residue-H
+H Even
+Order-9-Residue-P
+Order-10-Residue-H
+H Even
+Order-11-Residue-H
+H Odd
+Order-12-Residue-H
+H Even
+Order-13-Residue-H
+H Odd
+Order-14-Residue-P
+Order-15-Residue-H
+H Odd
+Order-16-Residue-P
+Order-17-Residue-P
+Order-18-Residue-P
+Order-19-Residue-H
+H Odd
+Order-20-Residue-P
+Order-21-Residue-P
+Order-22-Residue-P
+Order-23-Residue-H
+H Odd
+Order-24-Residue-P
+Order-25-Residue-P
+Order-26-Residue-P
+Order-27-Residue-P
+Order-28-Residue-H
+H Even
+Order-29-Residue-P
+Order-30-Residue-P
+Order-31-Residue-P
+Order-32-Residue-H
+H Even
+Order-33-Residue-P
+Order-34-Residue-P
+Order-35-Residue-P
+Order-36-Residue-H
+H Even
+Order-37-Residue-P
+Order-38-Residue-H
+H Even
+Order-39-Residue-H
+H Odd
+Order-40-Residue-H
+H Even
+Order-41-Residue-H
+H Odd
+Order-42-Residue-P
+Order-43-Residue-H
+H Odd
+Order-44-Residue-P
+Order-45-Residue-H
+H Odd
+Order-46-Residue-P
+Order-47-Residue-H
+H Odd
+Order-48-Residue-P
+Order-49-Residue-H
+H Odd
+Order-50-Residue-H
+H Even
+Odd_H_indices =  [ 1 11 13 15 19 23 39 41 43 45 47 49]
+Even_H_indices =  [ 2  4  6  8 10 12 28 32 36 38 40 50]
+O_S =  12
+E_S =  12
+O_terminal_H =  True
+E_terminal_H =  True
+OPT_S =  26
+=================Three Action State Env===============
+
+ThreeActionStateEnv init with attributes:
+self.seq =  HHPHPHPHPHHHHPHPPPHPPPHPPPPHPPPHPPPHPHHHHPHPHPHPHH
+len(self.seq) =  50
+self.obs_output_mode =  tuple
+self.state =  OrderedDict([((0, 0, 0), 'H'), ((0, 1, 0), 'H')])
+self.actions =  []
+self.action_space:
+Discrete(3)
+self.observation_space:
+Box([0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0], [3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3], (48,), int64)
+self.observation_space.high, low:
+[3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0]
+self.observation_space.shape:
+(48,)
+self.observation_space.dtype, self.action_space.dtype
+int64 int64
+self.first_turn_left =  False
+initial state/obs:
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0]
+n_actions =  3
+RNN_LSTM_onlyLastHidden with:
+inputs_size=6 hidden_size=256 num_layers=2 num_classes=3
++-------------------+------------+
+|      Modules      | Parameters |
++-------------------+------------+
+| lstm.weight_ih_l0 |    6144    |
+| lstm.weight_hh_l0 |   262144   |
+|  lstm.bias_ih_l0  |    1024    |
+|  lstm.bias_hh_l0  |    1024    |
+| lstm.weight_ih_l1 |   262144   |
+| lstm.weight_hh_l1 |   262144   |
+|  lstm.bias_ih_l1  |    1024    |
+|  lstm.bias_hh_l1  |    1024    |
+|     fc.weight     |    768     |
+|      fc.bias      |     3      |
++-------------------+------------+
+Total Trainable Params: 797443
+torch.cuda.is_available() =  False
+device =  cpu
+Model's state_dict:
+lstm.weight_ih_l0 	 torch.Size([1024, 6])
+lstm.weight_hh_l0 	 torch.Size([1024, 256])
+lstm.bias_ih_l0 	 torch.Size([1024])
+lstm.bias_hh_l0 	 torch.Size([1024])
+lstm.weight_ih_l1 	 torch.Size([1024, 256])
+lstm.weight_hh_l1 	 torch.Size([1024, 256])
+lstm.bias_ih_l1 	 torch.Size([1024])
+lstm.bias_hh_l1 	 torch.Size([1024])
+fc.weight 	 torch.Size([3, 256])
+fc.bias 	 torch.Size([3])
+Optimizer's state_dict:
+state 	 {}
+param_groups 	 [{'lr': 0.0005, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None, 'params': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}]
+========================================
+2024-04-21 14:34:08 - Start RL Program
+========================================
+
+found new highest reward =  10.0
+Episode 0, score: 10.0, epsilon: 1.00, reward_max: 10.0
+	s_prime: (array([[1, 0, 0, 0, 0, 1],
+       [1, 0, 0, 0, 0, 1],
+       [0, 1, 0, 0, 1, 0]]), (50, 6)), reward: 10, done: True, info: {'chain_length': 50, 'seq_length': 50, 'actions': ['L', 'L', 'R', 'R', 'L', 'L', 'F', 'R', 'L', 'R', 'L', 'F', 'L', 'L', 'R', 'L', 'R', 'F', 'F', 'L', 'R', 'F', 'F', 'R', 'F', 'R', 'R', 'L', 'L', 'F', 'R', 'L', 'L', 'R', 'R', 'L', 'R', 'F', 'R', 'L', 'L', 'F', 'F', 'L', 'R', 'F', 'F', 'R'], 'is_trapped': False, 'state_chain': OrderedDict([((0, 0, 0), 'H'), ((0, 1, 0), 'H'), ((-1, 1, 0), 'P'), ((-1, 0, 0), 'H'), ((-2, 0, 0), 'P'), ((-2, 1, 0), 'H'), ((-3, 1, 0), 'P'), ((-3, 0, 0), 'H'), ((-3, -1, 0), 'P'), ((-4, -1, 0), 'H'), ((-4, -2, 0), 'H'), ((-5, -2, 0), 'H'), ((-5, -3, 0), 'H'), ((-5, -4, 0), 'P'), ((-4, -4, 0), 'H'), ((-4, -3, 0), 'P'), ((-3, -3, 0), 'P'), ((-3, -2, 0), 'P'), ((-2, -2, 0), 'H'), ((-1, -2, 0), 'P'), ((0, -2, 0), 'P'), ((0, -1, 0), 'P'), ((1, -1, 0), 'H'), ((2, -1, 0), 'P'), ((3, -1, 0), 'P'), ((3, -2, 0), 'P'), ((3, -3, 0), 'P'), ((2, -3, 0), 'H'), ((2, -2, 0), 'P'), ((1, -2, 0), 'P'), ((1, -3, 0), 'P'), ((1, -4, 0), 'H'), ((0, -4, 0), 'P'), ((0, -5, 0), 'P'), ((1, -5, 0), 'P'), ((1, -6, 0), 'H'), ((0, -6, 0), 'P'), ((0, -7, 0), 'H'), ((-1, -7, 0), 'H'), ((-2, -7, 0), 'H'), ((-2, -6, 0), 'H'), ((-3, -6, 0), 'P'), ((-3, -7, 0), 'H'), ((-3, -8, 0), 'P'), ((-3, -9, 0), 'H'), ((-2, -9, 0), 'P'), ((-2, -10, 0), 'H'), ((-2, -11, 0), 'P'), ((-2, -12, 0), 'H'), ((-3, -12, 0), 'H')]), 'first_turn_left': True}
+found new highest reward =  15.0
+found new highest reward =  16.0
+found new highest reward =  17.0
